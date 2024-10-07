@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtShader</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Helvetica', sans-serif;
+            background-color: black;
+            color: white;
+            text-align: center;
+            overflow: hidden;
+        }
+        h1 {
+            font-size: 3em;
+            margin: 3em 0 0 0;
+        }
+        p {
+            font-size: 1.5em;
+        }
+        .graphic {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .animated-graphic {
+            animation: fadeIn 2s ease-in-out infinite alternate;
+        }
+        .circle-image {
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 0 30px 10px rgba(255, 255, 255, 0.8);
+        } 
+    </style>
+</head>
+<body>
+    <h1>Coming Soon!</h1>
+    <div class="graphic animated-graphic">
+        <img src="https://via.placeholder.com/800x600.png?text=ArtShader" alt="ArtShader" width="100%" class="circle-image"/>
+    </div>
+</body>
+</html>
